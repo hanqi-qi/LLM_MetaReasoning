@@ -6,7 +6,7 @@ for More Robust and Generalizable Reasoning](https://openreview.net/forum?id=Rrv
 
 
 - [Self-Awarenss](#self-awareness)
-    - [Uncertainty Estimation](#uncertain_estimation)
+    - [Uncertainty Estimation](#uncertainty_estimation)
 - [Monitoring](#monitoring)
     - [reward](#reward)
 - 
