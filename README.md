@@ -1,4 +1,4 @@
-# LLM_MetaReasoning_Resources
+# LLM_MetaReasoning
 
 ## Overview
 This repo contains relevant resources from our Position paper [Position: LLMs Need a Bayesian Meta-Reasoning Framework
