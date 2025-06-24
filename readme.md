@@ -9,7 +9,7 @@ Large language models (LLMs) excel at pattern-completion yet often struggle with
 As shown in [Figure 1](#overview), the paper proposes a ***Bayesian meta-reasoning framework*** that equips an LLM with four interacting modules.
 
 <p align="center">
-  <img src="overview.png" width="80%">
+  <img src="overview.png" width="90%">
 </p>
 <p align="center"><b>Figure 1:</b> Overview of the framework.</p>
 
@@ -29,8 +29,8 @@ The core functions and key benefits of each module are listed as follows:
 
 Large Language Models (LLMs) face several fundamental challenges in reasoning and decision-making. Below are four key open problems that motivate the need for a meta-reasoning framework:
 
-- **🚨 Overconfidence** <a id="open-problem-1"></a>: 
-  LLMs emit confident yet false answers.  
+- **🚨 Lack of self-awarenss in knowledge and ethics** <a id="open-problem-1"></a>: 
+  LLMs emit confident yet false answers, fail to refuse unethical requests.  
   **Solved by → [🧠 Self-Awareness](#41-🧠-self-awareness)**
 
 - **🔗 Inflexible Strategy** <a id="open-problem-2"></a>: 
@@ -42,8 +42,8 @@ Large Language Models (LLMs) face several fundamental challenges in reasoning an
   **Solved by → [🔍 Monitoring](#42-🔍-monitoring)**
 
 - **📚 Knowledge Updating** <a id="open-problem-4"></a>: 
-  Efficiently integrating new knowledge without forgetting remains hard.  
-  **Solved by → [🔄 Meta-Reflection](#44-🔄-meta-reflection)**
+  Efficiently integrating new knowledge in inference and training.  
+  **Solved by → [✅ Evaluation & Regulation](#43-✅-evaluation-and-regulation), [🔄 Meta-Reflection](#44-🔄-meta-reflection),**
 
 ---
 
