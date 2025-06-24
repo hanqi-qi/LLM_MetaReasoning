@@ -165,7 +165,7 @@ Neuron-symbolic system
 ***Research Gap***: current rewards are noisy proxies; lack adaptive control.
 
 <p align="center">
-  <img src="monitoring.png" width="60%">
+  <img src="monitor_selfplay.png" width="60%">
 </p>
 <p align="center"><b>Figure 4:</b> The Monitoring module.</p>
 
