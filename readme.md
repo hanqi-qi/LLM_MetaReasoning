@@ -9,7 +9,7 @@ Large language models (LLMs) excel at pattern-completion yet often struggle with
 As shown in [Figure 1](#overview), the paper proposes a ***Bayesian meta-reasoning framework*** that equips an LLM with four interacting modules.
 
 <p align="center">
-  <img src="overview.png" width="90%">
+  <img src="overview.png" width="50%">
 </p>
 <p align="center"><b>Figure 1:</b> Overview of the framework.</p>
 
@@ -59,7 +59,7 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
 
 <a id="bayesian"></a>
 <p align="center">
-  <img src="bayesian.png" width="80%">
+  <img src="bayesian.png" width="50%">
 </p>
 <p align="center"><b>Figure 2:</b> The Bayesian framework with both task-level and meta-level components.</p>
 
@@ -76,7 +76,7 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
 
 
 <p align="center">
-  <img src="self_awareness.png" width="80%">
+  <img src="self_awareness.png" width="50%">
 </p>
 <p align="center"><b>Figure 3:</b> The Self-Awareness module.</p>
 
@@ -165,7 +165,7 @@ Neuron-symbolic system
 ***Research Gap***: current rewards are noisy proxies; lack adaptive control.
 
 <p align="center">
-  <img src="monitor_selfplay.png" width="60%">
+  <img src="monitor_selfplay.png" width="30%">
 </p>
 <p align="center"><b>Figure 4:</b> The Monitoring module.</p>
 
@@ -240,6 +240,7 @@ Neuron-symbolic system
 </table>
 
 **Actioanable insights**:
+
 (a) self-play system
 
 (b) reward in latent space
@@ -256,7 +257,7 @@ Neuron-symbolic system
 ***Research Gap***: today’s methods are instance-local and template-fixed.
 
 <p align="center">
-  <img src="regulation.png" width="70%">
+  <img src="regulation.png" width="50%">
 </p>
 <p align="center"><b>Figure 5:</b> The Evaluation and Regulation module.</p>
 
