@@ -241,7 +241,9 @@ Neuron-symbolic system
 
 **Actioanable insights**:
 (a) self-play system
+
 (b) reward in latent space
+
 (c) Compress reasoning trajectories in latent space
 
 ↳ **Addresses** [🔗 Open 2](#open-problem-2) and [🎯 Open 3](#open-problem-3).
@@ -376,8 +378,10 @@ Neuron-symbolic system
 </table>
 
 **Actioanable insights**:
+
 (a) new benchmark with feedback and required skills annotation.
-(b) retrieve surrogate samples for reasoning inspiration.
+
+(b) Retrieve surrogate samples for reasoning inspiration.
 
 ↳ Complements [**🔍 Monitoring**](#42-🔍-monitoring); feeds [**🔄 Meta-Reflection**](#44-🔄-meta-reflection).
 
@@ -393,15 +397,19 @@ Neuron-symbolic system
 - [Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks](https://arxiv.org/abs/1703.03400)  
 - [MetaICL: Learning to Learn In Context](https://arxiv.org/abs/2110.15943)  
 - [Meta-learning via Language Model In-context Tuning](https://arxiv.org/abs/2110.07814)
+  
 (b) LoRA decomposition
 
 (c) multi-agent RL
 - [ReMA: Learning to Meta-think for LLMs with Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2503.09501)
+  
 (d) Bayesian Inverse Planning
 
 
 **Actioanable insights**:
+
 (a) Mechanistic interpretability for safe training and adaptation
+
 (b) multi-objective learning
 
 
