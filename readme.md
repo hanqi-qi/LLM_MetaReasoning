@@ -17,10 +17,10 @@ The core functions and key benefits of each module are listed as follows:
 
 | Module | Core Function | Key Benefit |
 |--------|---------------|-------------|
-| **[🧠 Self-Awareness](#41-🧠-self-awareness)** | Judge whether it *can* and *should* solve a given task | Reduces overconfidence |
-| **[🔍 Monitoring](#42-🔍-monitoring)** | Track intermediate steps via learnt rewards | Prevents reward hacking |
-| **[✅ Evaluation & Regulation](#43-✅-evaluation-and-regulation)** | Critique and revise the answer chain | Improves answer quality |
-| **[🔄 Meta-Reflection](#44-🔄-meta-reflection)** | Consolidate experience across tasks | Enables continual learning |
+| **[🧠 Self-Awareness](#41-🧠-self-awareness)** | Judge whether it *can* and *should* solve a given task, generate high-level reasoning strategy | Global control |
+| **[🔍 Monitoring](#42-🔍-monitoring)** | Track intermediate reasoning steps using intrinsic rewards | Mitigate reward hacking |
+| **[✅ Evaluation & Regulation](#43-✅-evaluation-and-regulation)** | Critique and revise the answer chain | Enable meta-thoughts for problem solving |
+| **[🔄 Meta-Reflection](#44-🔄-meta-reflection)** | Consolidate multi-source knolwegde across tasks | Enables efficient and safe learning |
 
 
 ---
