@@ -8,10 +8,10 @@
 Large language models (LLMs) excel at pattern-completion yet often struggle with **reliable reasoning**—they hallucinate, over-generalise, or overshoot their reward signals.  
 As shown in [Figure 1](#overview), the paper proposes a ***Bayesian meta-reasoning framework*** that equips an LLM with four interacting modules.
 
-<figure id="overview", style="text-align: center;">
-  <img src="overview.png" width=80%>
-  <figcaption><b>Figure 1:</b> Overview of the framework.</figcaption>
-</figure>
+<p align="center">
+  <img src="overview.png" width="80%">
+</p>
+<p align="center"><b>Figure 1:</b> Overview of the framework.</p>
 
 The core functions and key benefits of each module are listed as follows:
 
@@ -57,10 +57,12 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
 * **🔄 Meta-Reflection** updates global priors `(I, E)` for future tasks (addresses [📚 Open 4](#open-problem-4)).  
 
 
-<figure id="bayesian", style="text-align: center;">
-  <img src="bayesian.png" width=80%>
-  <figcaption><b>Figure 2:</b> The Bayesian framework with both task-level and meta-level components.</figcaption>
-</figure>
+<a id="bayesian"></a>
+<p align="center">
+  <img src="bayesian.png" width="80%">
+</p>
+<p align="center"><b>Figure 2:</b> The Bayesian framework with both task-level and meta-level components.</p>
+
 
 ---
 
@@ -73,10 +75,10 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
 **Addresses** [🚨 Open 1](#open-problem-1) and [🔗 Open 2](#open-problem-2).
 
 
-<figure style="text-align: center;">
-  <img src="self_awareness.png" width=80%>
-  <figcaption><b>Figure 3:</b> The Self-awareness module.</figcaption>
-</figure>
+<p align="center">
+  <img src="self_awareness.png" width="80%">
+</p>
+<p align="center"><b>Figure 3:</b> The Self-Awareness module.</p>
 
 
 
@@ -96,38 +98,58 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
       <td style="text-align:center;" rowspan="5"><strong>Uncertainty Estimation</strong></td>
       <td style="text-align:center;"><em>Real-Time</em></td>
       <td style="text-align:center;">Linguistic-based</td>
-      <td style="text-align:center;">[Tian et al., 2023](https://arxiv.org/abs/2305.14975); [Mielke et al., 2022](https://arxiv.org/abs/2012.14983)</td>
+      <td style="text-align:center;">
+        <a href="https://arxiv.org/abs/2305.14975">Tian et al., 2023</a>; 
+        <a href="https://arxiv.org/abs/2012.14983">Mielke et al., 2022</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:center;"><em>Real-Time</em></td>
       <td style="text-align:center;">Logit-based</td>
-      <td style="text-align:center;">[Huang et al., 2023](https://arxiv.org/abs/2307.10236); [Duan et al., 2024](https://arxiv.org/abs/2307.01379)</td>
+      <td style="text-align:center;">
+        <a href="https://arxiv.org/abs/2307.10236">Huang et al., 2023</a>; 
+        <a href="https://arxiv.org/abs/2307.01379">Duan et al., 2024</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:center;"><em>Real-Time</em></td>
       <td style="text-align:center;">Internal-state-based</td>
-      <td style="text-align:center;">[Kadavath et al., 2022](https://arxiv.org/abs/2207.05221); [Burns et al., 2023](https://arxiv.org/abs/2212.03827)</td>
+      <td style="text-align:center;">
+        <a href="https://arxiv.org/abs/2207.05221">Kadavath et al., 2022</a>; 
+        <a href="https://arxiv.org/abs/2212.03827">Burns et al., 2023</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:center;"><em>Post-hoc</em></td>
       <td style="text-align:center;">Consistency-based</td>
-      <td style="text-align:center;">[Manakul et al., 2023](https://arxiv.org/abs/2303.08896)</td>
+      <td style="text-align:center;">
+        <a href="https://arxiv.org/abs/2303.08896">Manakul et al., 2023</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:center;"><em>Post-hoc</em></td>
       <td style="text-align:center;">Distribution-based</td>
-      <td style="text-align:center;">[Catak et al., 2024](https://arxiv.org/abs/2406.19712); [Kuhn et al., 2023](https://arxiv.org/abs/2302.09664)</td>
+      <td style="text-align:center;">
+        <a href="https://arxiv.org/abs/2406.19712">Catak et al., 2024</a>; 
+        <a href="https://arxiv.org/abs/2302.09664">Kuhn et al., 2023</a>
+      </td>
     </tr>
-    <tr>    
+    <tr>
       <td style="text-align:center;" rowspan="2"><strong>Uncertainty Calibration</strong></td>
       <td style="text-align:center;">–</td>
       <td style="text-align:center;">Supervised-based</td>
-      <td style="text-align:center;">[Liu et al., 2024](https://arxiv.org/abs/2404.15993); [Kapoor et al., 2024](https://arxiv.org/abs/2406.08391)</td>
+      <td style="text-align:center;">
+        <a href="https://arxiv.org/abs/2404.15993">Liu et al., 2024</a>; 
+        <a href="https://arxiv.org/abs/2406.08391">Kapoor et al., 2024</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:center;">–</td>
       <td style="text-align:center;">Prompting-based</td>
-      <td style="text-align:center;">[Jiang et al., 2023](https://openreview.net/forum?id=L0dc4wqbNs#all); [Xiong et al., 2024](https://arxiv.org/abs/2306.13063)</td>
+      <td style="text-align:center;">
+        <a href="https://openreview.net/forum?id=L0dc4wqbNs#all">Jiang et al., 2023</a>; 
+        <a href="https://arxiv.org/abs/2306.13063">Xiong et al., 2024</a>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -140,17 +162,80 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
 ***Desirable Features***: fine-grained reward models, beam/MCTS integration.  
 ***Research Gap***: current rewards are noisy proxies; lack adaptive control.
 
-<figure style="text-align: center;">
-  <img src="monitoring.png" width=60%>
-  <figcaption><b>Figure 4:</b> The Monitoring module.</figcaption>
-</figure>
+<p align="center">
+  <img src="monitoring.png" width="60%">
+</p>
+<p align="center"><b>Figure 4:</b> The Monitoring module.</p>
 
 **Related work**:  
-- [Let’s Verify Step by Step](https://arxiv.org/abs/2305.20050)  
-- [ProcessBench: Identifying Process Errors in Mathematical Reasoning](https://arxiv.org/abs/2412.06559)  
-- [Self-Evolving Curriculum for LLM Reasoning](https://arxiv.org/abs/2505.14970)  
-- [Reasoning with Language Model is Planning with World Model](https://arxiv.org/abs/2305.14992)  
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center;">Reward Granularity</th>
+      <th style="text-align:center;">Rewards Type</th>
+      <th style="text-align:center;">Reward Source</th>
+      <th style="text-align:center;">Training Algorithms</th>
+      <th style="text-align:center;">Representative Papers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center;">Outcome-level</td>
+      <td style="text-align:center;">Preference</td>
+      <td style="text-align:center;">Modelled</td>
+      <td style="text-align:center;">SFT + (DPO / PPO / GRPO)</td>
+      <td style="text-align:left;">
+        <a href="https://arxiv.org/abs/2203.02155">Ouyang et al.</a>, 
+        <a href="https://arxiv.org/abs/2407.21783">Meta et al.</a>, 
+        <a href="https://arxiv.org/abs/2412.15115">Qwen et al.</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">Outcome-level</td>
+      <td style="text-align:center;">Correctness, Format</td>
+      <td style="text-align:center;">Groundtruth</td>
+      <td style="text-align:center;">GRPO</td>
+      <td style="text-align:left;">
+        <a href="https://arxiv.org/abs/2501.12948">Deepseek et al.</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">Outcome-level</td>
+      <td style="text-align:center;">Energy</td>
+      <td style="text-align:center;">–</td>
+      <td style="text-align:center;">SFT + PPO</td>
+      <td style="text-align:left;">
+        <a href="https://arxiv.org/abs/2504.13134">Lochab et al.</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:center;" rowspan="3">Process-level</td>
+      <td style="text-align:center;" rowspan="3">Correctness</td>
+      <td style="text-align:center;" rowspan="3">Modelled</td>
+      <td style="text-align:center;">SFT</td>
+      <td style="text-align:left;">
+        <a href="https://arxiv.org/abs/2405.03553">Chen et al.</a>, 
+        <a href="https://arxiv.org/abs/2309.17179">Feng et al.</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">SFT + (PPO / GRPO)</td>
+      <td style="text-align:left;">
+        <a href="https://arxiv.org/abs/2402.03300">Shao et al.</a>, 
+        <a href="https://arxiv.org/abs/2312.08935">Wang et al.</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:center;">SFT + DPO</td>
+      <td style="text-align:left;">
+        <a href="https://arxiv.org/abs/2406.09136">Zhang et al.</a>, 
+        <a href="https://arxiv.org/abs/2405.00451">Xie et al.</a>, 
+        <a href="https://arxiv.org/abs/2406.10858">Chen et al.</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ↳ **Addresses** [🔗 Open 2](#open-problem-2) and [🎯 Open 3](#open-problem-3).
 
@@ -161,15 +246,127 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
 ***Desirable Features***: iterative self-critique, template-free feedback, meta-error analysis.  
 ***Research Gap***: today’s methods are instance-local and template-fixed.
 
-<figure style="text-align: center;">
-  <img src="regulation.png" width=70%>
-  <figcaption><b>Figure 5:</b> The Evaluation and Regulation module.</figcaption>
-</figure>
+<p align="center">
+  <img src="regulation.png" width="70%">
+</p>
+<p align="center"><b>Figure 5:</b> The Evaluation and Regulation module.</p>
 
 **Related work**:  
-- [Self-Refine: Iterative Refinement with Self-Feedback](https://arxiv.org/abs/2303.17651)  
-- [PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization](https://arxiv.org/abs/2310.16427)  
-- [Training Language Models to Self-Correct via Reinforcement Learning](https://arxiv.org/abs/2409.12917)  
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center;">Aspect</th>
+      <th style="text-align:center;">Category / Technique</th>
+      <th style="text-align:center;">Representative Papers (chronological)</th>
+      <th style="text-align:center;">Key idea</th>
+      <th style="text-align:center;">Noted gaps / limits</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Evaluation block --------------------------------------------------->
+    <tr>
+      <td style="text-align:center;" rowspan="5"><strong>Evaluation<br>(generating feedback on a full reasoning chain)</strong></td>
+      <td style="text-align:center;"><strong>Template-based verbal feedback</strong></td>
+      <td style="text-align:left;">
+        <a href="https://arxiv.org/abs/2303.17651">Self-Refine (Madaan&nbsp;23)</a>,&nbsp;
+        <a href="https://openreview.net/forum?id=22pyNMuIoa">PromptAgent (Wang&nbsp;24d)</a>,&nbsp;
+        <a href="https://arxiv.org/pdf/2311.08516">LLM-CF (Tyen&nbsp;23)</a>,&nbsp;
+        <a href="https://arxiv.org/abs/2403.04222">Self-Eval&nbsp;LargeLM (Huang&nbsp;24b)</a>
+      </td>
+      <td style="text-align:left;">Use canned prompt templates that ask the model to critique its own output.</td>
+      <td style="text-align:left;">Feedback is often shallow and template rigidity limits coverage.</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>Critic-model feedback</strong></td>
+      <td style="text-align:left;">
+        <a href="https://arxiv.org/abs/2406.10858">Step-Level Preference (Chen&nbsp;24b)</a>,&nbsp;
+        <a href="https://arxiv.org/abs/2409.12917">Self-Correct (Kumar&nbsp;24)</a>,&nbsp;
+        <a href="https://arxiv.org/abs/2403.20046">Learning-from-Mistakes (Tong&nbsp;24)</a>,&nbsp;
+        <a href="https://arxiv.org/abs/2211.14275">Math&nbsp;Error&nbsp;Loc (Uesato&nbsp;22)</a>,&nbsp;
+        <a href="https://arxiv.org/pdf/2304.01904">REFINER (Paul&nbsp;24)</a>,&nbsp;
+        <a href="https://arxiv.org/pdf/2502.19230">DARS (Li&nbsp;25a)</a>
+      </td>
+      <td style="text-align:left;">Train a separate classifier/regressor that labels wrong steps.</td>
+      <td style="text-align:left;">High annotation cost; critics may localise but not explain errors clearly.</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>Token-based back-tracking</strong></td>
+      <td style="text-align:left;">
+        <a href="https://arxiv.org/pdf/2409.14586">Backtracking (Zhang&nbsp;25a)</a>,&nbsp;
+        <a href="https://arxiv.org/abs/2403.09629">Quiet-STaR (Zelikman&nbsp;24)</a>
+      </td>
+      <td style="text-align:left;">Add special tokens such as <code>[RESET]</code> to let the model roll back and try again.</td>
+      <td style="text-align:left;">Still relies on the base model’s willingness to revise.</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>Tool-assisted feedback</strong></td>
+      <td style="text-align:left;">
+        <em>Code tools&nbsp;—</em>
+        <a href="https://arxiv.org/abs/2305.04087">Self-Edit (Zhang&nbsp;23a)</a>,&nbsp;
+        <a href="https://openreview.net/forum?id=KuPixIqPiq">Self-Debug (Chen&nbsp;24c)</a>,&nbsp;
+        <a href="https://arxiv.org/pdf/2305.11738">CRITIC (Gou&nbsp;24)</a>,&nbsp;
+        <a href="https://arxiv.org/pdf/2504.11536">ReTool (Feng&nbsp;25a)</a>,&nbsp;
+        <a href="https://arxiv.org/abs/2504.13958">ToolRL (Qian&nbsp;25)</a><br>
+        <em>Search engines&nbsp;—</em>
+        <a href="https://arxiv.org/abs/2210.03629">ReAct (Yao&nbsp;23b)</a>,&nbsp;
+        <a href="https://arxiv.org/abs/2302.12813">Check-Facts (Peng&nbsp;23)</a>,&nbsp;
+        <a href="https://arxiv.org/abs/2503.09516">Search-R1 (Jin&nbsp;25)</a>,&nbsp;
+        <a href="https://arxiv.org/pdf/2503.05592">R1-Searcher (Song&nbsp;25)</a><br>
+        <em>Logic / topology&nbsp;—</em>
+        <a href="https://arxiv.org/pdf/2505.13890">Graph-Analyser (Zhang&nbsp;23b)</a>
+      </td>
+      <td style="text-align:left;">Call external solvers (code interpreters, web searchers, graph tools) to ground or verify intermediate results.</td>
+      <td style="text-align:left;">Coverage limited to domains where reliable tools exist.</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>Pattern-level / multi-instance feedback</strong></td>
+      <td style="text-align:left;">
+        <a href="https://arxiv.org/abs/2502.06772">Thought-Templates (Yang&nbsp;25a)</a>,&nbsp;
+        <a href="https://arxiv.org/abs/2406.04271">Meta-Buffer (Yang&nbsp;24)</a>,&nbsp;
+        <a href="https://aclanthology.org/2024.findings-acl.34.pdf">Semantic-Symbol Prompts (Wang&nbsp;24g)</a>
+      </td>
+      <td style="text-align:left;">Cluster similar queries, evaluate common error patterns rather than one-off instances.</td>
+      <td style="text-align:left;">Still handcrafted; relies on LLM compliance with structured templates.</td>
+    </tr>
+    <!-- Regulation block --------------------------------------------------->
+    <tr>
+      <td style="text-align:center;" rowspan="4"><strong>Regulation<br>(using feedback to repair reasoning)</strong></td>
+      <td style="text-align:center;"><strong>Direct self-reflection prompting</strong></td>
+      <td style="text-align:left;">
+        <a href="https://arxiv.org/abs/2303.17651">Self-Refine (Madaan&nbsp;23)</a>,&nbsp;
+        <a href="https://arxiv.org/abs/2406.10400">Self-Reflection Makes LLMs Safer (Liu&nbsp;24)</a>
+      </td>
+      <td style="text-align:left;">Feed critique back to the same model and ask it to revise its answer.</td>
+      <td style="text-align:left;">LLMs can be “stubborn” and ignore corrections.</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>Gradient-through-text (TextGrad)</strong></td>
+      <td style="text-align:left;">
+        <a href="https://arxiv.org/abs/2406.07496">TextGrad (Yuksekgonul&nbsp;25)</a>
+      </td>
+      <td style="text-align:left;">Treat natural-language feedback as a gradient signal and refine the prompt.</td>
+      <td style="text-align:left;">Requires differentiable proxy; early-stage research.</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>Explicit error-correction trajectories</strong></td>
+      <td style="text-align:left;">
+        <a href="https://arxiv.org/abs/2403.09629">Quiet-STaR (Zelikman&nbsp;24)</a>,&nbsp;
+        <a href="https://arxiv.org/pdf/2409.14586">Backtracking (Zhang&nbsp;25a)</a>
+      </td>
+      <td style="text-align:left;">Train on pairs (wrong chain → fixed chain) so the model learns how to patch errors.</td>
+      <td style="text-align:left;">May over-fit to surface patterns.</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><strong>‘Think-mode’ time-outs</strong></td>
+      <td style="text-align:left;">
+        <a href="https://arxiv.org/pdf/2501.12948">DeepSeek-R1 “think” mode (Chen&nbsp;25)</a>
+      </td>
+      <td style="text-align:left;">Insert a deliberate wait to encourage an extra round of internal checks before answering.</td>
+      <td style="text-align:left;">Can introduce over-thinking latency.</td>
+    </tr>
+  </tbody>
+</table>
 
 ↳ Complements [**🔍 Monitoring**](#42-🔍-monitoring); feeds [**🔄 Meta-Reflection**](#44-🔄-meta-reflection).
 
