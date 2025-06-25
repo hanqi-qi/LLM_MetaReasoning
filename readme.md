@@ -53,7 +53,7 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
 
 * **🧠 Self-Awareness** estimates *task solvability* → initialises strategy `F` (addresses [🚨 Open 1](#open-problem-1), [🔗 Open 2](#open-problem-2)).  
 * **🔍 Monitoring** executes `F`, scoring each step with a reward model (addresses [🔗 Open 2](#open-problem-2), [🎯 Open 3](#open-problem-3)).  
-* **✅ Evaluation & Regulation** critiques results and corrects errors.  
+* **✅ Evaluation & Regulation** critiques results and corrects errors.  (addresses [📚 Open 4](#open-problem-4))
 * **🔄 Meta-Reflection** updates global priors `(I, E)` for future tasks (addresses [📚 Open 4](#open-problem-4)).  
 
 
@@ -82,7 +82,7 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
 
 
 
-**Related work**:  
+##### Related work:  
 
 <table>
   <thead>
@@ -154,8 +154,14 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
   </tbody>
 </table>
 
-**Actionable insights**:  
-Neuron-symbolic system
+##### Actionable insights 
+
+:warning:A unified framework that integrates multi-aspect task solvability—including factors beyond knowledge boundaries and ethical considerations—such as prioritizing efficiency or addressing constraints for specific user groups (e.g., teenagers). 
+
+:rocket: This paves the way for a promising future direction: a neuro-symbolic system capable of **accurately** synthesizing multiple aspects into a coherent whole.
+
+[Logical Reasoning in Large Language Models: A Survey](https://arxiv.org/pdf/2502.09100) 2025
+[Chain of Logic: Rule-Based Reasoning with Large Language Models](https://arxiv.org/abs/2402.10400) 2024
 
 ---
 
@@ -169,7 +175,7 @@ Neuron-symbolic system
 </p>
 <p align="center"><b>Figure 4:</b> The Monitoring module.</p>
 
-**Related work**:  
+#### Related work  
 
 <table>
   <thead>
@@ -239,13 +245,25 @@ Neuron-symbolic system
   </tbody>
 </table>
 
-**Actioanable insights**:
+##### Actioanable insights
 
-(a) self-play system
+:warning: Verified reward, preteained reward model, or using LLM-as-a-Judge have notable limitations: they often overlook reasoning diversity, rely on expensive human annotation, not reliable, not adaptive to changing environments. 
 
-(b) reward in latent space
+We believe a **self-play system**, where the evaluator is an evolving agent and the feedback is based on **internal signals**, offers a promising alternative. This approach has proven to be faithful, controllable, and efficient; also compressing the reasoning trajectories into the latent space can improve the reasoning robust via avoiding superficial alignment.
 
-(c) Compress reasoning trajectories in latent space
+🚀 self-play system
+[A survey on self-evolution of large language models.](https://arxiv.org/abs/2404.14387)
+[Self-Play Preference Optimization for Language Model Alignment](https://arxiv.org/abs/2405.00675)
+
+🚀 reward in latent space
+[Reasoning Models Don't Always Say What They Think](https://arxiv.org/abs/2505.05410) 2025. Alignment Science Team, Anthropic
+[Soft Reasoning: Navigating Solution Spaces in Large Language Models through Controlled Embedding Exploration](https://arxiv.org/abs/2505.24688) ICML25, spotlight
+[Latent Space Chain-Of-Embedding Enables Output-Free Llm Self-Evaluation](https://arxiv.org/abs/2410.13640). ICLR25
+[Learning to Reason without External Rewards](https://arxiv.org/abs/2505.19590) 2025
+
+🚀 Compress reasoning trajectories in latent space
+[Training Large Language Models to Reason in a Continuous Latent Space](https://arxiv.org/abs/2412.06769)
+[CODI: Compressing Chain-of-Thought into Continuous Space via Self-Distillation](https://arxiv.org/abs/2502.21074)
 
 ↳ **Addresses** [🔗 Open 2](#open-problem-2) and [🎯 Open 3](#open-problem-3).
 
