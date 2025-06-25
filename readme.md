@@ -252,18 +252,18 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
 We believe a **self-play system**, where the evaluator is an evolving agent and the feedback is based on **internal signals**, offers a promising alternative. This approach has proven to be faithful, controllable, and efficient; also compressing the reasoning trajectories into the latent space can improve the reasoning robust via avoiding superficial alignment.
 
 🚀 self-play system
-[A survey on self-evolution of large language models.](https://arxiv.org/abs/2404.14387)
-[Self-Play Preference Optimization for Language Model Alignment](https://arxiv.org/abs/2405.00675)
+[A survey on self-evolution of large language models.](https://arxiv.org/abs/2404.14387)\\
+[Self-Play Preference Optimization for Language Model Alignment](https://arxiv.org/abs/2405.00675)\\
 
 🚀 reward in latent space
-[Reasoning Models Don't Always Say What They Think](https://arxiv.org/abs/2505.05410) 2025. Alignment Science Team, Anthropic
-[Soft Reasoning: Navigating Solution Spaces in Large Language Models through Controlled Embedding Exploration](https://arxiv.org/abs/2505.24688) ICML25, spotlight
-[Latent Space Chain-Of-Embedding Enables Output-Free Llm Self-Evaluation](https://arxiv.org/abs/2410.13640). ICLR25
-[Learning to Reason without External Rewards](https://arxiv.org/abs/2505.19590) 2025
+[Reasoning Models Don't Always Say What They Think](https://arxiv.org/abs/2505.05410) 2025. Alignment Science Team, Anthropic \\
+[Soft Reasoning: Navigating Solution Spaces in Large Language Models through Controlled Embedding Exploration](https://arxiv.org/abs/2505.24688) ICML25, spotlight \\
+[Latent Space Chain-Of-Embedding Enables Output-Free Llm Self-Evaluation](https://arxiv.org/abs/2410.13640). ICLR25 \\
+[Learning to Reason without External Rewards](https://arxiv.org/abs/2505.19590) 2025 \\
 
 🚀 Compress reasoning trajectories in latent space
-[Training Large Language Models to Reason in a Continuous Latent Space](https://arxiv.org/abs/2412.06769)
-[CODI: Compressing Chain-of-Thought into Continuous Space via Self-Distillation](https://arxiv.org/abs/2502.21074)
+[Training Large Language Models to Reason in a Continuous Latent Space](https://arxiv.org/abs/2412.06769) \\
+[CODI: Compressing Chain-of-Thought into Continuous Space via Self-Distillation](https://arxiv.org/abs/2502.21074) \\
 
 ↳ **Addresses** [🔗 Open 2](#open-problem-2) and [🎯 Open 3](#open-problem-3).
 
