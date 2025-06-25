@@ -245,11 +245,11 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
   </tbody>
 </table>
 
-##### Actioanable insights
+##### Actionable insights
 
-:warning: Verified reward, preteained reward model, or using LLM-as-a-Judge have notable limitations: they often overlook reasoning diversity, rely on expensive human annotation, not reliable, not adaptive to changing environments. 
+:warning: Verified reward, pre-trained reward model, or using LLM-as-a-Judge have notable limitations: they often overlook reasoning diversity, rely on expensive human annotation, are not reliable, not adaptive to changing environments. 
 
-We believe a **self-play system**, where the evaluator is an evolving agent and the feedback is based on **internal signals**, offers a promising alternative. This approach has proven to be faithful, controllable, and efficient; also compressing the reasoning trajectories into the latent space can improve the reasoning robust via avoiding superficial alignment.
+We believe a **self-play system**, where the evaluator is an evolving agent and the feedback is based on **internal signals**, offers a promising alternative. This approach has proven to be faithful, controllable, and efficient; also compressing the reasoning trajectories into the latent space can improve the reasoning robustness via avoiding superficial alignment.
 
 🚀 self-play system
 - [A survey on self-evolution of large language models.](https://arxiv.org/abs/2404.14387)
