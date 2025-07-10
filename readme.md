@@ -304,7 +304,7 @@ To Linhai: Add a list of papers using latent skills to generate an initial strat
 </table>
 -->
 
-##### Actionable insights
+#### Actionable insights
 
 :warning: Verified reward, pre-trained reward model, or using LLM-as-a-Judge have notable limitations: they often overlook reasoning diversity, rely on expensive human annotation, are not reliable, not adaptive to changing environments. 
 
