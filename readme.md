@@ -1,6 +1,6 @@
 # Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning
 
-> **Paper:** *Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning* (ICML 2025) [[link](https://kclpure.kcl.ac.uk/ws/portalfiles/portal/334828564/ICML25_MetaReasoning_CameraReady.pdf)]
+> **Paper:** *Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning* (ICML 2025) [[link](https://openreview.net/pdf?id=RrvhbxO2hd)]
  
 ---
 
