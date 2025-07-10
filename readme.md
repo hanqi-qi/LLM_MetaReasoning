@@ -427,17 +427,18 @@ The **self-play system**, where the evaluator is an evolving agent and **interna
 :warning:  To enable relevant knowledge incorporation beyond embedding-based similarity for input questions, we can consider sharing latent-skill, similar distilled reasoning patterns match, such as template, symbolic form, or causal graph underlying.  
 
 🚀 Meta-knowledge incorporation via sharing similar: 
-- **temnplate**
+
+- **Template**
   - [ReasonFlux: Hierarchical LLM Reasoning via Scaling Thought Templates](https://arxiv.org/abs/2502.06772). 2025
 
-- **symbolic match**
+- **Symbolic match**
  
   
-- **latent reasoning process**
+- **Latent reasoning process**
 
 
 
-↳ Complements [**🔍 Monitoring**](#42-🔍-monitoring); feeds [**🔄 Meta-Reflection**](#44-🔄-meta-reflection).
+↳ **Addresses** [📚 Open 4](#open-problem-4).
 
 ---
 
@@ -445,18 +446,16 @@ The **self-play system**, where the evaluator is an evolving agent and **interna
 ***Goal***: Perform hierarchical Bayesian updates of knowledge priors `(I, E)` across tasks.  
 
 #### Related work
-(a) meta-prompt optimisation
+(a) Meta-prompt optimisation
 - [Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks](https://arxiv.org/abs/1703.03400)  
 - [MetaICL: Learning to Learn In Context](https://arxiv.org/abs/2110.15943)  
 - [Meta-learning via Language Model In-context Tuning](https://arxiv.org/abs/2110.07814)
   
-(b) LoRA decomposition
-- [Safe LoRA: the Silver Lining of Reducing Safety Risks when Fine-tuning Large Language Models](https://arxiv.org/abs/2405.16833) Neurips24
+(b) LoRA decomposition and combination for unseen tasks
+- [LoraHub: Efficient Cross-Task Generalization via Dynamic LoRA Composition](https://arxiv.org/abs/2307.13269) COLM24
 
-(c) multi-agent RL
-- [ReMA: Learning to Meta-think for LLMs with Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2503.09501)
   
-(d) Bayesian Inverse Planning
+(c) Bayesian Inverse Planning
 - [AutoToM: Scaling Model-based Mental Inference via Automated Agent Modeling](https://chuanyangjin.com/AutoToM/) 2025
 
 #### Actionable insights
@@ -466,8 +465,13 @@ The **self-play system**, where the evaluator is an evolving agent and **interna
 
 - [Toward understanding and preventing misalignment generalization. ](https://openai.com/index/emergent-misalignment/) OpenAI 2025
 - [Mechanistic Interpretability for AI Safety A Review] TMLR2024
+- [Safe LoRA: the Silver Lining of Reducing Safety Risks when Fine-tuning Large Language Models](https://arxiv.org/abs/2405.16833) Neurips24
 
  🚀 Hierarchical agentic framework 
+
+ - [LLM-Powered Decentralized Generative Agents with Adaptive Hierarchical Knowledge Graph for Cooperative Planning] AAAI25
+
+   To Jiazheng: adding popular papers with a multi-level agentic framework released in 2025, 
   
 ↳ **Addresses** [🔗 Open 2](#open-problem-2)[📚 Open 4](#open-problem-4).
 
