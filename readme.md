@@ -160,19 +160,20 @@ Existing studies focus on capability-awareness, i.e., confidence/uncertainty mea
   </tbody>
 </table>
 
-To Linhai: Add a table summerising the paper about mission awareness
+To Linhai: Add a table summarizing the paper about mission awareness
 
 #### Actionable insights 
 
 :warning: A unified framework that integrates multi-aspect task solvability—including factors beyond knowledge boundaries and ethical considerations—such as prioritizing efficiency or addressing constraints for specific user groups (e.g., teenagers). 
 
-:rocket: This paves the way for a promising future direction: a neuro-symbolic system capable of **accurately** synthesizing multiple aspects into a coherent whole.
-
 - [Logical Reasoning in Large Language Models: A Survey](https://arxiv.org/pdf/2502.09100) 2025
 - [Chain of Logic: Rule-Based Reasoning with Large Language Models](https://arxiv.org/abs/2402.10400) 2024
 
 :warning: Lack of adaptability in diverse latent skills selection.
-:rocket: This paves the way for a promising future direction: a neuro-symbolic system capable of **accurately** synthesizing multiple aspects into a coherent whole.
+
+To Linhai: Add a list of papers using latent skills to generate an initial strategy, can be general to incorpoate similar cases as new context, as long as this step is before the actual reasoning step generation.
+
+- [LaRS: Latent Reasoning Skills for Chain-of-Thought Reasoning](https://arxiv.org/abs/2312.04684) 2025 
 
 ---
 
