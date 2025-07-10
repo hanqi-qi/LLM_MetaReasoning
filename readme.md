@@ -47,21 +47,21 @@ The core functions and key benefits of each module are listed as follows:
 #### How can these modules alleviate the above limitations?
 
 * **🧠 Self-Awareness**
-  - estimates *task solvability* based on question difficulty and question morality, and
-  - outputs an initial adaptive strategy `F`
-  - addresses [🚨 Open 1](#open-problem-1), [🔗 Open 2](#open-problem-2)).  
+  - Establish a unified framework to measure *task solvability* before conducting the reasoning step generation
+  - Outputs an initial adaptive strategy `F` for adaptive reasoning
+  - Addresses [🚨 Open 1](#open-problem-1), [🔗 Open 2](#open-problem-2)).  
 * **🔍 Monitoring**
-  - following the initial reasoning strategy, scoring each step
-  - with intrinsic and dynamic reward
-  - addresses [🔗 Open 2](#open-problem-2), [🎯 Open 3](#open-problem-3).  
+  - Given the initial reasoning strategy, verifying each reasoning step
+  - Evaluate the intermediate reasoning process with intrinsic and dynamic reward
+  - Addresses [🔗 Open 2](#open-problem-2), [🎯 Open 3](#open-problem-3).  
 * **✅ Evaluation & Regulation**
-  - Critiques results and corrects errors
-  - with help from surrogate samples.
-  - (addresses [📚 Open 4](#open-problem-4))
+  - Critiques the completed reasoning process and corrects errors
+  - Incorporate knowledge with help from surrogate samples sharing the latent reasoning process.
+  - Addresses [📚 Open 4](#open-problem-4))
 * **🔄 Meta-Reflection**
-  - updates global priors `(I, E)`
-  - based on meta-observations across multiple samples
-  - addresses [📚 Open 4](#open-problem-4)).  
+  - Updates the model parameter and initial reasoning strategy 
+  - Utilise the meta-observations across multiple samples and address the knowledge conflicts
+  - Addresses [🔗 Open 2](#open-problem-2)[📚 Open 4](#open-problem-4)).  
 
 <!--
 <a id="bayesian"></a>
@@ -78,18 +78,17 @@ The core functions and key benefits of each module are listed as follows:
 We explain each component with existing literature as supporting, also actionable insights for next-step research actions. 
 
 ### 🧠 3.1. Self-Awareness <a id="41-🧠-self-awareness"></a>
-***Goal***: Calculate the **capability-aware** (capability vs question difficulties) and **mission-aware** (if the input request is moral) solvability before attempting.  
-**Addresses** [🚨 Open 1](#open-problem-1) and [🔗 Open 2](#open-problem-2).
-
+***Goal***: 
+- (1) Calculate the **task sovability** before attempting;
+- (2) generate an initial reasoning strategy based on latent skills
 
 <p align="center">
   <img src="self_awareness.png" width="50%">
 </p>
 <p align="center"><b>Figure 3:</b> The Self-Awareness module.</p>
 
-
-
 #### Related work:  
+Existing studies focus on capability-awareness, i.e., confidence/uncertainty measurement, or mission-awareness. 
 
 <table>
   <thead>
@@ -161,6 +160,8 @@ We explain each component with existing literature as supporting, also actionabl
   </tbody>
 </table>
 
+To Linhai: Add a table summerising the paper about mission awareness
+
 #### Actionable insights 
 
 :warning: A unified framework that integrates multi-aspect task solvability—including factors beyond knowledge boundaries and ethical considerations—such as prioritizing efficiency or addressing constraints for specific user groups (e.g., teenagers). 
@@ -184,6 +185,9 @@ We explain each component with existing literature as supporting, also actionabl
 <p align="center"><b>Figure 4:</b> The Monitoring module.</p>
 
 #### Related work  
+
+To Zhenyi: Add a table summarizing the papers using the three methods during training. 
+
 **Verifiable reward**
 
 **Trained Reward Model**
@@ -264,7 +268,7 @@ We explain each component with existing literature as supporting, also actionabl
 
 :warning: Verified reward, pre-trained reward model, or using LLM-as-a-Judge have notable limitations: they often overlook reasoning diversity, rely on expensive human annotation, are not reliable, not adaptive to changing environments. 
 
-We believe a **self-play system**, where the evaluator is an evolving agent and the feedback is based on **internal signals**, offers a promising alternative. This approach has proven to be faithful, controllable, and efficient; also compressing the reasoning trajectories into the latent space can improve the reasoning robustness via avoiding superficial alignment.
+The **self-play system**, where the evaluator is an evolving agent and **internal signals** as reward offers a promising alternative for its faithfulness, controllability, and efficiency.
 
 🚀 Self-play system
 - [A survey on self-evolution of large language models.](https://arxiv.org/abs/2404.14387)
@@ -286,7 +290,7 @@ We believe a **self-play system**, where the evaluator is an evolving agent and 
 ---
 
 ### ✅ 3.3. Evaluation and Regulation <a id="43-✅-evaluation-and-regulation"></a>
-***Goal***: Critique and refine the generated reasoning chain.  
+***Goal***: Critique and refine the generated reasoning chain with the knowledge from surrogate samples.  
 
 <p align="center">
   <img src="regulation.png" width="50%">
@@ -414,17 +418,21 @@ We believe a **self-play system**, where the evaluator is an evolving agent and 
 
 :warning: To enable multi-sample/meta-level error analysis and correction, we need new benchmarks that include rich error and feedback annotations. This allows us to link samples with similar mistakes and let them inform each other’s solving processes.
 
-🚀 **New benchmark with inter-sample error and feedback annotation**
+🚀 New benchmark with inter-sample error and feedback annotation
+
+- [From rankings to insights: Evaluation should shift focus from leaderboard to feedback](https://arxiv.org/abs/2505.06698) 2025
 
 
 :warning:  To enable relevant knowledge incorporation beyond embedding-based similarity for input questions, we can consider sharing latent-skill, similar distilled reasoning patterns match, such as template, symbolic form, or causal graph underlying.  
 
-🚀 **Meta-knowledge incorporation via sharing similar: 
+🚀 Meta-knowledge incorporation via sharing similar: 
 - **temnplate**
+  - [ReasonFlux: Hierarchical LLM Reasoning via Scaling Thought Templates](https://arxiv.org/abs/2502.06772). 2025
 
 - **symbolic match**
+ 
   
-- **casual process**
+- **latent reasoning process**
 
 
 
@@ -444,20 +452,21 @@ We believe a **self-play system**, where the evaluator is an evolving agent and 
 - [Meta-learning via Language Model In-context Tuning](https://arxiv.org/abs/2110.07814)
   
 (b) LoRA decomposition
+- [Safe LoRA: the Silver Lining of Reducing Safety Risks when Fine-tuning Large Language Models](https://arxiv.org/abs/2405.16833) Neurips24
 
 (c) multi-agent RL
 - [ReMA: Learning to Meta-think for LLMs with Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2503.09501)
   
 (d) Bayesian Inverse Planning
-
+- [AutoToM: Scaling Model-based Mental Inference via Automated Agent Modeling](https://chuanyangjin.com/AutoToM/) 2025
 
 #### Actionable insights
 
-(a) Mechanistic interpretability for safe training and adaptation
+Mechanistic interpretability for safe training and adaptation
 
-
-
-
+- [Toward understanding and preventing misalignment generalization. ](https://openai.com/index/emergent-misalignment/) OpenAI 2025
+- [Mechanistic Interpretability for AI Safety A Review] TMLR2024
+  
 ↳ **Addresses** [📚 Open 4](#open-problem-4) and aggregates insights from all other modules.
 
 ---
