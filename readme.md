@@ -187,8 +187,6 @@ To Linhai: Add a list of papers using latent skills to generate an initial strat
 
 #### Related work  
 
-To Zhenyi: Add a table summarizing the papers using the three methods during training. 
-
 <table>
   <thead>
     <tr>
@@ -202,44 +200,38 @@ To Zhenyi: Add a table summarizing the papers using the three methods during tra
       <td style="text-align:center;" rowspan="2"><strong>Trained Reward Model</strong></td>
       <td style="text-align:center;"><em>Outcome level</em></td>
       <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2203.02155">Ouyang et al.</a>; 
-        <a href="https://arxiv.org/abs/2407.21783">Meta et al.</a>; 
-        <a href="https://arxiv.org/abs/2412.15115">Qwen et al.</a>
+        <a href="https://arxiv.org/abs/2203.02155">Ouyang et al., 2022</a>; 
+        <a href="https://arxiv.org/abs/2407.21783">Meta et al., 2024</a>; 
+        <a href="https://arxiv.org/abs/2412.15115">Qwen et al., 2024</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:center;"><em>Process level</em></td>
       <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2402.03300">Shao et al.</a>; 
-        <a href="https://arxiv.org/abs/2312.08935">Wang et al.</a>; 
-        <a href="https://arxiv.org/abs/2405.00451">Xie et al.</a>
+        <a href="https://arxiv.org/abs/2402.03300">Shao et al., 2024</a>; 
+        <a href="https://arxiv.org/abs/2312.08935">Wang et al., 2024</a>; 
+        <a href="https://arxiv.org/abs/2405.00451">Xie et al., 2024</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:center;"><strong>LLM as a Judge</strong></td>
       <td style="text-align:center;"><em>Outcome level</em></td>
       <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2401.10020">Yuan et al.</a>; 
-        <a href="https://arxiv.org/abs/2505.10320">Whitehouse et al.</a>
+        <a href="https://arxiv.org/abs/2401.10020">Yuan et al., 2025</a>; 
+        <a href="https://arxiv.org/abs/2505.10320">Whitehouse et al., 2025</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:center;"><strong>Verifiable Reward</strong></td>
       <td style="text-align:center;"><em>Outcome level</em></td>
       <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2501.12948">Deepseek et al.</a>; 
-        <a href="https://arxiv.org/abs/2307.04349">Liu et al.</a>; 
-        <a href="https://arxiv.org/abs/2503.23829">Su et al.</a>
+        <a href="https://arxiv.org/abs/2501.12948">Deepseek et al., 2025</a>; 
+        <a href="https://arxiv.org/abs/2307.04349">Liu et al., 2023</a>; 
+        <a href="https://arxiv.org/abs/2503.23829">Su et al., 2025</a>
       </td>
     </tr>
   </tbody>
 </table>
-
-**Verifiable reward**
-
-**Trained Reward Model**
-
-**LLM as a Judge**
 
 <!--
 <table>
