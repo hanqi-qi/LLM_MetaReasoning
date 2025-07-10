@@ -470,8 +470,9 @@ The **self-play system**, where the evaluator is an evolving agent and **interna
  🚀 Hierarchical agentic framework 
 
  - [LLM-Powered Decentralized Generative Agents with Adaptive Hierarchical Knowledge Graph for Cooperative Planning](https://arxiv.org/pdf/2502.05453) AAAI25
-
-   To Jiazheng: adding popular papers with a multi-level agentic framework released in 2025, 
+ - [AgentOrchestra: A Hierarchical Multi-Agent Framework for General-Purpose Task Solving](https://www.arxiv.org/pdf/2506.12508) 2025
+ - [TOWARDS HIERARCHICAL MULTI-AGENT WORKFLOWS FOR ZERO-SHOT PROMPT OPTIMIZATION](https://arxiv.org/pdf/2405.20252) ICLR 2025 workshop
+ - [HALO: Hierarchical Autonomous Logic-Oriented Orchestration for Multi-Agent LLM Systems](https://arxiv.org/pdf/2505.13516) 2025
   
 ↳ **Addresses** [🔗 Open 2](#open-problem-2)[📚 Open 4](#open-problem-4).
 
