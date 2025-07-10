@@ -469,7 +469,7 @@ The **self-play system**, where the evaluator is an evolving agent and **interna
 
  🚀 Hierarchical agentic framework 
 
- - [LLM-Powered Decentralized Generative Agents with Adaptive Hierarchical Knowledge Graph for Cooperative Planning] AAAI25
+ - [LLM-Powered Decentralized Generative Agents with Adaptive Hierarchical Knowledge Graph for Cooperative Planning](https://arxiv.org/pdf/2502.05453) AAAI25
 
    To Jiazheng: adding popular papers with a multi-level agentic framework released in 2025, 
   
