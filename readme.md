@@ -33,6 +33,7 @@ As shown in [Figure 1](#overview), the paper proposes a ***Bayesian meta-reasoni
 </p>
 <p align="center"><b>Figure 1:</b> Overview of the framework.</p>
 
+<!--
 The core functions and key benefits of each module are listed as follows:
 
 | Module | Core Function | Key Benefit |
@@ -41,20 +42,34 @@ The core functions and key benefits of each module are listed as follows:
 | **[🔍 Monitoring](#42-🔍-monitoring)** | Track intermediate reasoning steps using intrinsic rewards | Mitigate reward hacking |
 | **[✅ Evaluation & Regulation](#43-✅-evaluation-and-regulation)** | Critique and revise the answer chain | Enable meta-thoughts for problem solving |
 | **[🔄 Meta-Reflection](#44-🔄-meta-reflection)** | Consolidate multi-source knolwegde across tasks | Enables efficient and safe learning |
+-->
 
 #### How can these modules alleviate the above limitations?
 
-* **🧠 Self-Awareness** estimates *task solvability* based on question difficulty and question morality→ initialises adaptive strategy `F` (addresses [🚨 Open 1](#open-problem-1), [🔗 Open 2](#open-problem-2)).  
-* **🔍 Monitoring** executes `F`, scoring each step with intrinsic and dynamic reward (addresses [🔗 Open 2](#open-problem-2), [🎯 Open 3](#open-problem-3)).  
-* **✅ Evaluation & Regulation** critiques results and corrects errors with help from surrogate samples.  (addresses [📚 Open 4](#open-problem-4))
-* **🔄 Meta-Reflection** updates global priors `(I, E)` based on meta-observations across multiple samples (addresses [📚 Open 4](#open-problem-4)).  
+* **🧠 Self-Awareness**
+  - estimates *task solvability* based on question difficulty and question morality, and
+  - outputs an initial adaptive strategy `F`
+  - addresses [🚨 Open 1](#open-problem-1), [🔗 Open 2](#open-problem-2)).  
+* **🔍 Monitoring**
+  - following the initial reasoning strategy, scoring each step
+  - with intrinsic and dynamic reward
+  - addresses [🔗 Open 2](#open-problem-2), [🎯 Open 3](#open-problem-3).  
+* **✅ Evaluation & Regulation**
+  - Critiques results and corrects errors
+  - with help from surrogate samples.
+  - (addresses [📚 Open 4](#open-problem-4))
+* **🔄 Meta-Reflection**
+  - updates global priors `(I, E)`
+  - based on meta-observations across multiple samples
+  - addresses [📚 Open 4](#open-problem-4)).  
 
-
+<!--
 <a id="bayesian"></a>
 <p align="center">
   <img src="bayesian.png" width="50%">
 </p>
 <p align="center"><b>Figure 2:</b> The Bayesian framework with both task-level and meta-level components.</p>
+-->
 
 ---
 
