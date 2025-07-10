@@ -443,8 +443,6 @@ The **self-play system**, where the evaluator is an evolving agent and **interna
 
 ### 🔄 3.4. Meta-Reflection <a id="44-🔄-meta-reflection"></a>
 ***Goal***: Perform hierarchical Bayesian updates of knowledge priors `(I, E)` across tasks.  
-***Desirable Features***: modular updates (adapters), latent strategy discovery, efficient consolidation.  
-***Research Gap***: meta-templates rarely adapt; meta-updates are costly.
 
 #### Related work
 (a) meta-prompt optimisation
@@ -462,13 +460,16 @@ The **self-play system**, where the evaluator is an evolving agent and **interna
 - [AutoToM: Scaling Model-based Mental Inference via Automated Agent Modeling](https://chuanyangjin.com/AutoToM/) 2025
 
 #### Actionable insights
+:warning: knowledge conflicts or inefficiency when updating multi-source knowledge
 
-Mechanistic interpretability for safe training and adaptation
+🚀 Mechanistic interpretability for safe training and adaptation
 
 - [Toward understanding and preventing misalignment generalization. ](https://openai.com/index/emergent-misalignment/) OpenAI 2025
 - [Mechanistic Interpretability for AI Safety A Review] TMLR2024
+
+ 🚀 Hierarchical agentic framework 
   
-↳ **Addresses** [📚 Open 4](#open-problem-4) and aggregates insights from all other modules.
+↳ **Addresses** [🔗 Open 2](#open-problem-2)[📚 Open 4](#open-problem-4).
 
 ---
 
