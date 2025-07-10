@@ -4,7 +4,27 @@
  
 ---
 
-## ✨ 1. Introduction
+## ❓ 1. Open Problem
+
+Large Language Models (LLMs) face several fundamental challenges in reasoning and decision-making. Below are four key open problems that motivate the need for a meta-reasoning framework:
+
+- **🚨 Lack of self-awarenss in knowledge and ethics** <a id="open-problem-1"></a>: 
+  LLMs often exhibit a strong *“Feeling of Knowing”* but lack crucial human-like cognitive attributes, such as *“awareness of limitations”* and “awareness of situation”.
+
+ 
+- **🔗 Inflexible Strategy** <a id="open-problem-2"></a>: 
+  LLMs lack of a flexible reasoning strategy for different individual problems, such as overthinking for simple questions; inefficiency of coordinating diverse tools in different reasoning phases. 
+
+- **🎯 Reward Hacking** <a id="open-problem-3"></a>: 
+ Reasoning agents exploit flaws in the reward function to achieve high scores without genuinely learning transferable reasoning patterns.
+
+- **📚 Knowledge Updating** <a id="open-problem-4"></a>: 
+Current on-the-fly knowledge retrieval or fine-tuning fails to adequately address the knowledge conflicts and resource inefficiency, especially when we need to inject multi-source knowledge.  
+
+---
+
+
+## ✨ 2. Overall Framework
 Large language models (LLMs) excel at pattern-completion yet often struggle with **reliable reasoning**—they hallucinate, over-generalise, or overshoot their reward signals.  
 As shown in [Figure 1](#overview), the paper proposes a ***Bayesian meta-reasoning framework*** that equips an LLM with four interacting modules.
 
@@ -22,39 +42,12 @@ The core functions and key benefits of each module are listed as follows:
 | **[✅ Evaluation & Regulation](#43-✅-evaluation-and-regulation)** | Critique and revise the answer chain | Enable meta-thoughts for problem solving |
 | **[🔄 Meta-Reflection](#44-🔄-meta-reflection)** | Consolidate multi-source knolwegde across tasks | Enables efficient and safe learning |
 
+#### How can these modules alleviate the above limitations?
 
----
-
-## ❓ 2. Open Problem
-
-Large Language Models (LLMs) face several fundamental challenges in reasoning and decision-making. Below are four key open problems that motivate the need for a meta-reasoning framework:
-
-- **🚨 Lack of self-awarenss in knowledge and ethics** <a id="open-problem-1"></a>: 
-  LLMs emit confident yet false answers, fail to refuse unethical requests.  
-  **Solved by → [🧠 Self-Awareness](#41-🧠-self-awareness)**
-
-- **🔗 Inflexible Strategy** <a id="open-problem-2"></a>: 
-  Models rely on one-size-fits-all heuristics (e.g. chain-of-thought).  
-  **Solved by → [🧠 Self-Awareness](#41-🧠-self-awareness), [🔍 Monitoring](#42-🔍-monitoring)**
-
-- **🎯 Reward Misalignment** <a id="open-problem-3"></a>: 
-  Static RLHF rewards are gamed, harming generalisation.  
-  **Solved by → [🔍 Monitoring](#42-🔍-monitoring)**
-
-- **📚 Knowledge Updating** <a id="open-problem-4"></a>: 
-  Efficiently integrating new knowledge in inference and training.  
-  **Solved by → [✅ Evaluation & Regulation](#43-✅-evaluation-and-regulation), [🔄 Meta-Reflection](#44-🔄-meta-reflection),**
-
----
-
-## 🗺️ 3. Overall Framework
-
-To achieve the aforementioned characteristics, we propose a Bayesian framework shown in [Figure 2](#bayesian):
-
-* **🧠 Self-Awareness** estimates *task solvability* → initialises strategy `F` (addresses [🚨 Open 1](#open-problem-1), [🔗 Open 2](#open-problem-2)).  
-* **🔍 Monitoring** executes `F`, scoring each step with a reward model (addresses [🔗 Open 2](#open-problem-2), [🎯 Open 3](#open-problem-3)).  
-* **✅ Evaluation & Regulation** critiques results and corrects errors.  (addresses [📚 Open 4](#open-problem-4))
-* **🔄 Meta-Reflection** updates global priors `(I, E)` for future tasks (addresses [📚 Open 4](#open-problem-4)).  
+* **🧠 Self-Awareness** estimates *task solvability* based on question difficulty and question morality→ initialises adaptive strategy `F` (addresses [🚨 Open 1](#open-problem-1), [🔗 Open 2](#open-problem-2)).  
+* **🔍 Monitoring** executes `F`, scoring each step with intrinsic and dynamic reward (addresses [🔗 Open 2](#open-problem-2), [🎯 Open 3](#open-problem-3)).  
+* **✅ Evaluation & Regulation** critiques results and corrects errors with help from surrogate samples.  (addresses [📚 Open 4](#open-problem-4))
+* **🔄 Meta-Reflection** updates global priors `(I, E)` based on meta-observations across multiple samples (addresses [📚 Open 4](#open-problem-4)).  
 
 
 <a id="bayesian"></a>
@@ -63,15 +56,14 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
 </p>
 <p align="center"><b>Figure 2:</b> The Bayesian framework with both task-level and meta-level components.</p>
 
-
 ---
 
-## 🧩 4. Detailed Modules
+## 🧩 3. Literature review with actionable insights
 
-### 🧠 4.1. Self-Awareness <a id="41-🧠-self-awareness"></a>
-***Goal***: Judge **capability-aware** and **mission-aware** solvability before attempting.  
-***Desirable Features***: calibrated confidence, OOD detection, principled refusal.  
-***Research Gap***: existing calibration is single-view; no unified capability × mission model.
+We explain each component with existing literature as supporting, also actionable insights for next-step research actions. 
+
+### 🧠 3.1. Self-Awareness <a id="41-🧠-self-awareness"></a>
+***Goal***: Calculate the **capability-aware** (capability vs question difficulties) and **mission-aware** (if the input request is moral) solvability before attempting.  
 **Addresses** [🚨 Open 1](#open-problem-1) and [🔗 Open 2](#open-problem-2).
 
 
@@ -82,7 +74,7 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
 
 
 
-##### Related work:  
+#### Related work:  
 
 <table>
   <thead>
@@ -154,21 +146,22 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
   </tbody>
 </table>
 
-##### Actionable insights 
+#### Actionable insights 
 
-:warning:A unified framework that integrates multi-aspect task solvability—including factors beyond knowledge boundaries and ethical considerations—such as prioritizing efficiency or addressing constraints for specific user groups (e.g., teenagers). 
+:warning: A unified framework that integrates multi-aspect task solvability—including factors beyond knowledge boundaries and ethical considerations—such as prioritizing efficiency or addressing constraints for specific user groups (e.g., teenagers). 
 
 :rocket: This paves the way for a promising future direction: a neuro-symbolic system capable of **accurately** synthesizing multiple aspects into a coherent whole.
 
 - [Logical Reasoning in Large Language Models: A Survey](https://arxiv.org/pdf/2502.09100) 2025
 - [Chain of Logic: Rule-Based Reasoning with Large Language Models](https://arxiv.org/abs/2402.10400) 2024
 
+:warning: Lack of adaptability in diverse latent skills selection.
+:rocket: This paves the way for a promising future direction: a neuro-symbolic system capable of **accurately** synthesizing multiple aspects into a coherent whole.
+
 ---
 
-### 🔍 4.2. Monitoring <a id="42-🔍-monitoring"></a>
-***Goal***: Guide search with **step-level rewards** and adjust strategy on-the-fly.  
-***Desirable Features***: fine-grained reward models, beam/MCTS integration.  
-***Research Gap***: current rewards are noisy proxies; lack adaptive control.
+### 🔍 3.2. Monitoring <a id="42-🔍-monitoring"></a>
+***Goal***: Guide search with step-level intrinsic, faithful, dynamic and efficient rewards to alleviate reward hacking problem
 
 <p align="center">
   <img src="monitor_selfplay.png" width="30%">
@@ -176,7 +169,13 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
 <p align="center"><b>Figure 4:</b> The Monitoring module.</p>
 
 #### Related work  
+**Verifiable reward**
 
+**Trained Reward Model**
+
+**LLM as a Judge**
+
+<!--
 <table>
   <thead>
     <tr>
@@ -244,6 +243,7 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
     </tr>
   </tbody>
 </table>
+-->
 
 ##### Actionable insights
 
@@ -251,35 +251,34 @@ To achieve the aforementioned characteristics, we propose a Bayesian framework s
 
 We believe a **self-play system**, where the evaluator is an evolving agent and the feedback is based on **internal signals**, offers a promising alternative. This approach has proven to be faithful, controllable, and efficient; also compressing the reasoning trajectories into the latent space can improve the reasoning robustness via avoiding superficial alignment.
 
-🚀 self-play system
+🚀 Self-play system
 - [A survey on self-evolution of large language models.](https://arxiv.org/abs/2404.14387)
 - [Self-Play Preference Optimization for Language Model Alignment](https://arxiv.org/abs/2405.00675)
 
-🚀 reward in latent space
+🚀 Using intrinsic representation as rewards
 - [Reasoning Models Don't Always Say What They Think](https://arxiv.org/abs/2505.05410) 2025. Alignment Science Team, Anthropic 
 - [Soft Reasoning: Navigating Solution Spaces in Large Language Models through Controlled Embedding Exploration](https://arxiv.org/abs/2505.24688) ICML25, spotlight 
 - [Latent Space Chain-Of-Embedding Enables Output-Free Llm Self-Evaluation](https://arxiv.org/abs/2410.13640). ICLR25
-- [Learning to Reason without External Rewards](https://arxiv.org/abs/2505.19590) 2025 
-
-🚀 Compress reasoning trajectories in latent space
-- [Training Large Language Models to Reason in a Continuous Latent Space](https://arxiv.org/abs/2412.06769) 
-- [CODI: Compressing Chain-of-Thought into Continuous Space via Self-Distillation](https://arxiv.org/abs/2502.21074) 
+- [Learning to Reason without External Rewards](https://arxiv.org/abs/2505.19590) 2025
+  
+🚀 Compress reasoning process in the latent space for efficiency
+- [Training Large Language Models to Reason in a Continuous Latent Space](https://arxiv.org/abs/2412.06769) 2025, submitted to ICLR
+- [CODI: Compressing Chain-of-Thought into Continuous Space via Self-Distillation](https://arxiv.org/abs/2502.21074) 2025, submitted to EMNLP
+- [Broaden your SCOPE! Efficient Multi-turn Conversation Planning for LLMs with Semantic Space](https://arxiv.org/abs/2503.11586), ICLR25
 
 ↳ **Addresses** [🔗 Open 2](#open-problem-2) and [🎯 Open 3](#open-problem-3).
 
 ---
 
-### ✅ 4.3. Evaluation and Regulation <a id="43-✅-evaluation-and-regulation"></a>
+### ✅ 3.3. Evaluation and Regulation <a id="43-✅-evaluation-and-regulation"></a>
 ***Goal***: Critique and refine the generated reasoning chain.  
-***Desirable Features***: iterative self-critique, template-free feedback, meta-error analysis.  
-***Research Gap***: today’s methods are instance-local and template-fixed.
 
 <p align="center">
   <img src="regulation.png" width="50%">
 </p>
 <p align="center"><b>Figure 5:</b> The Evaluation and Regulation module.</p>
 
-**Related work**:  
+#### Related work  
 
 <table>
   <thead>
@@ -396,22 +395,34 @@ We believe a **self-play system**, where the evaluator is an evolving agent and 
   </tbody>
 </table>
 
-**Actioanable insights**:
+#### Actionable insights
 
-(a) new benchmark with feedback and required skills annotation.
+:warning: To enable multi-sample/meta-level error analysis and correction, we need new benchmarks that include rich error and feedback annotations. This allows us to link samples with similar mistakes and let them inform each other’s solving processes.
 
-(b) Retrieve surrogate samples for reasoning inspiration.
+🚀 **New benchmark with inter-sample error and feedback annotation**
+
+
+:warning:  To enable relevant knowledge incorporation beyond embedding-based similarity for input questions, we can consider sharing latent-skill, similar distilled reasoning patterns match, such as template, symbolic form, or causal graph underlying.  
+
+🚀 **Meta-knowledge incorporation via sharing similar: 
+- **temnplate**
+
+- **symbolic match**
+  
+- **casual process**
+
+
 
 ↳ Complements [**🔍 Monitoring**](#42-🔍-monitoring); feeds [**🔄 Meta-Reflection**](#44-🔄-meta-reflection).
 
 ---
 
-### 🔄 4.4. Meta-Reflection <a id="44-🔄-meta-reflection"></a>
+### 🔄 3.4. Meta-Reflection <a id="44-🔄-meta-reflection"></a>
 ***Goal***: Perform hierarchical Bayesian updates of knowledge priors `(I, E)` across tasks.  
 ***Desirable Features***: modular updates (adapters), latent strategy discovery, efficient consolidation.  
 ***Research Gap***: meta-templates rarely adapt; meta-updates are costly.
 
-**Related work**:  
+#### Related work
 (a) meta-prompt optimisation
 - [Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks](https://arxiv.org/abs/1703.03400)  
 - [MetaICL: Learning to Learn In Context](https://arxiv.org/abs/2110.15943)  
@@ -425,34 +436,20 @@ We believe a **self-play system**, where the evaluator is an evolving agent and 
 (d) Bayesian Inverse Planning
 
 
-**Actioanable insights**:
+#### Actionable insights
 
 (a) Mechanistic interpretability for safe training and adaptation
 
-(b) multi-objective learning
+
 
 
 ↳ **Addresses** [📚 Open 4](#open-problem-4) and aggregates insights from all other modules.
 
 ---
 
-## 🚀 5. Actionable Insights
-| Insight | Linked Module(s) |
-|---------|------------------|
-| **Benchmark & Metrics** – build *SolvBench*, *AwareBench* to test meta-reasoning | 🧠 Self-Awareness, 🔄 Meta-Reflection |
-| **Multi-View Solvability** – neuro-symbolic joint modelling | 🧠 Self-Awareness |
-| **Adaptive Strategy Generation** – latent “plan-to-plan” learning | 🧠 Self-Awareness, 🔄 Meta-Reflection |
-| **Self-Play for Meta-Rewards** – richer reward shaping | 🔍 Monitoring |
-| **Latent-Space Reasoning** – reduce surface-level errors | ✅ Evaluation & Regulation, 🔄 Meta-Reflection |
-| **Modular Meta-Training** – adapter banks for sub-skills | 🔄 Meta-Reflection |
-
-By pursuing these insights, researchers can close the gaps identified in each module and realise a full Bayesian meta-reasoning LLM.
-
----
-
 ## 📖 Citation
 
-If this work is helpful, please kindly cite as:
+If this work is helpful, please cite as:
 
 ```bigquery
 @inproceedings{yan2025position,
