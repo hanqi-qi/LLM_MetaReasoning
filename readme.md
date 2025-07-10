@@ -227,7 +227,8 @@ To Linhai: Add a list of papers using latent skills to generate an initial strat
       <td style="text-align:center;">
         <a href="https://arxiv.org/abs/2501.12948">Deepseek et al., 2025</a>; 
         <a href="https://arxiv.org/abs/2307.04349">Liu et al., 2023</a>; 
-        <a href="https://arxiv.org/abs/2503.23829">Su et al., 2025</a>
+        <a href="https://arxiv.org/abs/2503.23829">Su et al., 2025</a>;
+        <a href="https://arxiv.org/abs/2507.05197">Dou et al., 2025</a>
       </td>
     </tr>
   </tbody>
