@@ -93,74 +93,72 @@ Existing studies focus on capability-awareness, i.e., confidence/uncertainty mea
 <table>
   <thead>
     <tr>
-      <th style="text-align:center;">High-Level Category</th>
+      <th style="text-align:center;">Main Category</th>
       <th style="text-align:center;">Sub-Category</th>
-      <th style="text-align:center;">Method Type</th>
       <th style="text-align:center;">Representative Papers</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;" rowspan="5"><strong>Uncertainty Estimation</strong></td>
-      <td style="text-align:center;"><em>Real-Time</em></td>
-      <td style="text-align:center;">Linguistic-based</td>
+      <td style="text-align:center;" rowspan="2"><strong>Capability-awareness</strong></td>
+      <td style="text-align:center;"><em>Uncertainty Estimation</em></td>
       <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2305.14975">Tian et al., 2023</a>; 
-        <a href="https://arxiv.org/abs/2012.14983">Mielke et al., 2022</a>
+        <a href="https://arxiv.org/abs/2305.14975">Just Ask for Calibration</a>;
+        <a href="https://arxiv.org/abs/2307.10236">Look Before You Leap</a>;
+        <a href="https://arxiv.org/abs/2402.00616">Can LLMs Express Their Uncertainty?</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:center;"><em>Real-Time</em></td>
-      <td style="text-align:center;">Logit-based</td>
+      <td style="text-align:center;"><em>Knowledgeable Self-awareness</em></td>
       <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2307.10236">Huang et al., 2023</a>; 
-        <a href="https://arxiv.org/abs/2307.01379">Duan et al., 2024</a>
+        <a href="https://arxiv.org/abs/2504.03553">KnowSelf</a>;
+        <a href="https://arxiv.org/abs/2310.11511">Self-RAG</a>;
+        <a href="https://arxiv.org/abs/2406.19215">SeaKR</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:center;"><em>Real-Time</em></td>
-      <td style="text-align:center;">Internal-state-based</td>
+      <td style="text-align:center;" rowspan="2"><strong>Mission-awareness</strong></td>
+      <td style="text-align:center;"><em>LLM Jailbreaking Defence</em></td>
       <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2207.05221">Kadavath et al., 2022</a>; 
-        <a href="https://arxiv.org/abs/2212.03827">Burns et al., 2023</a>
+        <a href="https://arxiv.org/abs/2309.00667">Situational Awareness</a>;
+        <a href="https://arxiv.org/abs/2411.07494">Rapid Response</a>;
+        <a href="https://arxiv.org/abs/2406.05644">Explain Jailbreaking</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:center;"><em>Post-hoc</em></td>
-      <td style="text-align:center;">Consistency-based</td>
+      <td style="text-align:center;"><em>Reward Hack Defence</em></td>
       <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2303.08896">Manakul et al., 2023</a>
+        <a href="https://arxiv.org/abs/2503.11926">Monitor Reasoning Models</a>;
+        <a href="https://arxiv.org/abs/2506.22777">Verbalize Reward Hacking</a>;
+        <a href="https://arxiv.org/abs/2401.05566">Sleeper Agents</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:center;"><em>Post-hoc</em></td>
-      <td style="text-align:center;">Distribution-based</td>
+      <td style="text-align:center;" rowspan="3"><strong>Initialised Reasoning Strategy</strong></td>
+      <td style="text-align:center;"><em>Prompt-based</em></td>
       <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2406.19712">Catak et al., 2024</a>; 
-        <a href="https://arxiv.org/abs/2302.09664">Kuhn et al., 2023</a>
+        <a href="https://arxiv.org/abs/2406.11698"> Meta-Reasoning Prompting</a>;
+        <a href="https://arxiv.org/abs/2303.11366">Reflexion</a>;
+        <a href="https://arxiv.org/abs/2310.06117">Take a Step Back</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:center;" rowspan="2"><strong>Uncertainty Calibration</strong></td>
-      <td style="text-align:center;">–</td>
-      <td style="text-align:center;">Supervised-based</td>
+      <td style="text-align:center;"><em>Latent-based</em></td>
       <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2404.15993">Liu et al., 2024</a>; 
-        <a href="https://arxiv.org/abs/2406.08391">Kapoor et al., 2024</a>
+        <a href="https://arxiv.org/abs/2312.04684">LaRS</a>;
+        <a href="https://arxiv.org/abs/2412.06769">Coconut</a>;
+        <a href="https://arxiv.org/abs/2502.21074">CODI</a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:center;">–</td>
-      <td style="text-align:center;">Prompting-based</td>
+      <td style="text-align:center;"><em>Agent-based</em></td>
       <td style="text-align:center;">
-        <a href="https://openreview.net/forum?id=L0dc4wqbNs#all">Jiang et al., 2023</a>; 
-        <a href="https://arxiv.org/abs/2306.13063">Xiong et al., 2024</a>
+        <a href="https://arxiv.org/abs/2503.03686">MAS-GPT</a>;
+        <a href="https://arxiv.org/abs/2503.09501">ReMA</a>
       </td>
     </tr>
   </tbody>
 </table>
-
-To Linhai: Add a table summarizing the paper about mission awareness
 
 #### Actionable insights 
 
