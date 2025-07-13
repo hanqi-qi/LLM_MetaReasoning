@@ -103,58 +103,34 @@ Existing studies focus on capability-awareness, i.e., confidence/uncertainty mea
       <td style="text-align:center;" rowspan="2"><strong>Capability-awareness</strong></td>
       <td style="text-align:center;"><em>Uncertainty Estimation</em></td>
       <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2305.14975">Just Ask for Calibration</a>;
-        <a href="https://arxiv.org/abs/2307.10236">Look Before You Leap</a>;
-        <a href="https://arxiv.org/abs/2402.00616">Can LLMs Express Their Uncertainty?</a>
+        <a href="https://arxiv.org/abs/2305.14975">Just Ask for Calibration (2023.05)</a>;
+        <a href="https://arxiv.org/abs/2307.10236">Look Before You Leap (2023.07)</a>;
+        <a href="https://arxiv.org/abs/2402.00616">Can LLMs Express Their Uncertainty? (2024.02)</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:center;"><em>Knowledgeable Self-awareness</em></td>
-      <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2504.03553">KnowSelf</a>;
-        <a href="https://arxiv.org/abs/2310.11511">Self-RAG</a>;
-        <a href="https://arxiv.org/abs/2406.19215">SeaKR</a>
+      <td style="text-align:center;">    
+        <a href="https://arxiv.org/abs/2310.11511">Self-RAG (2023.10)</a>;
+        <a href="https://arxiv.org/abs/2406.19215">SeaKR (2024.06)</a>;
+        <a href="https://arxiv.org/abs/2504.03553">KnowSelf (2025.04)</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:center;" rowspan="2"><strong>Mission-awareness</strong></td>
       <td style="text-align:center;"><em>LLM Jailbreaking Defence</em></td>
       <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2309.00667">Situational Awareness</a>;
-        <a href="https://arxiv.org/abs/2411.07494">Rapid Response</a>;
-        <a href="https://arxiv.org/abs/2406.05644">Explain Jailbreaking</a>
+        <a href="https://arxiv.org/abs/2309.00667">Situational Awareness (2023.09)</a>;
+        <a href="https://arxiv.org/abs/2406.05644">Explain Jailbreaking (2024.06)</a>;
+        <a href="https://arxiv.org/abs/2411.07494">Rapid Response (2024.11)</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:center;"><em>Reward Hack Defence</em></td>
       <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2503.11926">Monitor Reasoning Models</a>;
-        <a href="https://arxiv.org/abs/2506.22777">Verbalize Reward Hacking</a>;
-        <a href="https://arxiv.org/abs/2401.05566">Sleeper Agents</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:center;" rowspan="3"><strong>Initialised Reasoning Strategy</strong></td>
-      <td style="text-align:center;"><em>Prompt-based</em></td>
-      <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2406.11698"> Meta-Reasoning Prompting</a>;
-        <a href="https://arxiv.org/abs/2303.11366">Reflexion</a>;
-        <a href="https://arxiv.org/abs/2310.06117">Take a Step Back</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:center;"><em>Latent-based</em></td>
-      <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2312.04684">LaRS</a>;
-        <a href="https://arxiv.org/abs/2412.06769">Coconut</a>;
-        <a href="https://arxiv.org/abs/2502.21074">CODI</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:center;"><em>Agent-based</em></td>
-      <td style="text-align:center;">
-        <a href="https://arxiv.org/abs/2503.03686">MAS-GPT</a>;
-        <a href="https://arxiv.org/abs/2503.09501">ReMA</a>
+        <a href="https://arxiv.org/abs/2401.05566">Sleeper Agents (2024.01)</a>;
+        <a href="https://arxiv.org/abs/2503.11926">Monitor Reasoning Models (2025.03)</a>;
+        <a href="https://arxiv.org/abs/2506.22777">Verbalize Reward Hacking (2025.06)</a>
       </td>
     </tr>
   </tbody>
@@ -501,7 +477,7 @@ The **self-play system**, where the evaluator is an evolving agent and **interna
 🚀 Mechanistic interpretability for safe training and adaptation
 
 - [Toward understanding and preventing misalignment generalization. ](https://openai.com/index/emergent-misalignment/) OpenAI 2025
-- [Mechanistic Interpretability for AI Safety A Review] TMLR2024
+- [Mechanistic Interpretability for AI Safety A Review](https://openreview.net/forum?id=ePUVetPKu6) TMLR2024
 - [Safe LoRA: the Silver Lining of Reducing Safety Risks when Fine-tuning Large Language Models](https://arxiv.org/abs/2405.16833) Neurips24
 
  🚀 Hierarchical agentic framework 
