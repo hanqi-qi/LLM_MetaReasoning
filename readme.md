@@ -143,11 +143,10 @@ Existing studies focus on capability-awareness, i.e., confidence/uncertainty mea
 - [Logical Reasoning in Large Language Models: A Survey](https://arxiv.org/pdf/2502.09100) 2025
 - [Chain of Logic: Rule-Based Reasoning with Large Language Models](https://arxiv.org/abs/2402.10400) 2024
 
-:warning: Lack of adaptability in diverse latent skills selection.
+:warning: Lack of adaptability in diverse latent skills measurement/selection.
 
-To Linhai: Add a list of papers using latent skills to generate an initial strategy, can be general to incorpoate similar cases as new context, as long as this step is before the actual reasoning step generation.
-
-- [LaRS: Latent Reasoning Skills for Chain-of-Thought Reasoning](https://arxiv.org/abs/2312.04684) 2025 
+- [LaRS: Latent Reasoning Skills for Chain-of-Thought Reasoning](https://arxiv.org/abs/2312.04684) 2025
+- [Embedding Trajectory for Out-of-Distribution Detection in Mathematical Reasoning](https://proceedings.neurips.cc/paper_files/paper/2024/file/4b734e95f0788a030a69caa987516186-Paper-Conference.pdf) Neurips 2024
 
 ---
 
@@ -445,11 +444,10 @@ The **self-play system**, where the evaluator is an evolving agent and **interna
   - [ReasonFlux: Hierarchical LLM Reasoning via Scaling Thought Templates](https://arxiv.org/abs/2502.06772). 2025
 
 - **Symbolic match**
- 
+ - [Meta-Reasoning: Semantics-Symbol Deconstruction for Large Language Models](https://arxiv.org/pdf/2306.17820). ACL2024-finidngs
   
 - **Latent reasoning process**
-
-
+- [Embedding Trajectory for Out-of-Distribution Detection in Mathematical Reasoning](https://proceedings.neurips.cc/paper_files/paper/2024/file/4b734e95f0788a030a69caa987516186-Paper-Conference.pdf) Neurips 2024
 
 ↳ **Addresses** [📚 Open 4](#open-problem-4).
 
