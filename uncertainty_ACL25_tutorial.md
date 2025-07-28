@@ -7,3 +7,10 @@
 
 ## Claim 4: Ensemble is a way for Uncertainty Quantification.
 
+## Challenges & Solution : 
+### 1. Granularity for uncertainty measurement (from token-level to document-level).
+- propose claim-level UQ.
+  
+- 
+
+
