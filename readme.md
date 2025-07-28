@@ -89,6 +89,10 @@ We explain each component with existing literature as supporting, also actionabl
 
 #### Related work:  
 Existing studies focus on capability-awareness, i.e., confidence/uncertainty measurement, or mission-awareness. 
+<p align="left">
+  <img src="UQ_cates.png" width="30%">
+</p>
+<p align="left"><b>Figure 3:</b> Types of Uncertainty Quantification. From ACL25 Tutorial.</p>
 
 <table>
   <thead>
