@@ -150,8 +150,8 @@ Existing studies focus on capability-awareness, i.e., confidence/uncertainty mea
 
 More papers in Uncertainty quantification:
 
-- [LM-Polygraph: Uncertainty Estimation for Language Models](https://arxiv.org/abs/2311.07383) EMNLP2023, citation 80+
----
+- [LM-Polygraph: Uncertainty Estimation for Language Models](https://arxiv.org/abs/2311.07383) EMNLP2023, citation 80+ <br>
+TLDR: a framework with implementations of a battery of state-of-the-art Uncetainty Estimation methods for LLMs in text generation tasks
 
 ### 🔍 3.2. Monitoring <a id="42-🔍-monitoring"></a>
 ***Goal***: Guide search with step-level intrinsic, faithful, dynamic and efficient rewards to alleviate reward hacking problem
