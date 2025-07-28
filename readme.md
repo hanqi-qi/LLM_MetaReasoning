@@ -148,6 +148,9 @@ Existing studies focus on capability-awareness, i.e., confidence/uncertainty mea
 - [LaRS: Latent Reasoning Skills for Chain-of-Thought Reasoning](https://arxiv.org/abs/2312.04684) 2025
 - [Embedding Trajectory for Out-of-Distribution Detection in Mathematical Reasoning](https://proceedings.neurips.cc/paper_files/paper/2024/file/4b734e95f0788a030a69caa987516186-Paper-Conference.pdf) Neurips 2024
 
+More papers in Uncertainty quantification:
+
+- [LM-Polygraph: Uncertainty Estimation for Language Models](https://arxiv.org/abs/2311.07383) EMNLP2023, citation 80+
 ---
 
 ### 🔍 3.2. Monitoring <a id="42-🔍-monitoring"></a>
