@@ -136,6 +136,12 @@ Existing studies focus on capability-awareness, i.e., confidence/uncertainty mea
   </tbody>
 </table>
 
+More papers in Uncertainty quantification:
+
+- [LM-Polygraph: Uncertainty Estimation for Language Models](https://arxiv.org/abs/2311.07383) EMNLP2023, citation 80+ <br>
+TLDR: a framework with implementations of a battery of state-of-the-art Uncetainty Estimation methods for LLMs in text generation tasks
+
+
 #### Actionable insights 
 
 :warning: A unified framework that integrates multi-aspect task solvability—including factors beyond knowledge boundaries and ethical considerations—such as prioritizing efficiency or addressing constraints for specific user groups (e.g., teenagers). 
@@ -148,10 +154,7 @@ Existing studies focus on capability-awareness, i.e., confidence/uncertainty mea
 - [LaRS: Latent Reasoning Skills for Chain-of-Thought Reasoning](https://arxiv.org/abs/2312.04684) 2025
 - [Embedding Trajectory for Out-of-Distribution Detection in Mathematical Reasoning](https://proceedings.neurips.cc/paper_files/paper/2024/file/4b734e95f0788a030a69caa987516186-Paper-Conference.pdf) Neurips 2024
 
-More papers in Uncertainty quantification:
 
-- [LM-Polygraph: Uncertainty Estimation for Language Models](https://arxiv.org/abs/2311.07383) EMNLP2023, citation 80+ <br>
-TLDR: a framework with implementations of a battery of state-of-the-art Uncetainty Estimation methods for LLMs in text generation tasks
 
 ### 🔍 3.2. Monitoring <a id="42-🔍-monitoring"></a>
 ***Goal***: Guide search with step-level intrinsic, faithful, dynamic and efficient rewards to alleviate reward hacking problem
